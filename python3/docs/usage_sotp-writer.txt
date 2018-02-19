@@ -1,0 +1,165 @@
+
+USAGE (sotp-writer.py)
+
+    Contents:
+
+        1.  Definition
+        2.  General stuff
+          2.1  How to run Python scripts
+          2.2  Overview of all command-line arguments
+        3. Create a new config file
+        4. Write contents
+          4.1  Add a new option
+          4.2  Overwrite an existing option
+          4.3  Add a new section
+          4.4  Force writing
+        5. Remove contents
+          5.1  Remove an option
+          5.2  Remove a whole section
+
+    1. Definition
+
+        The SOTP Writer script modifies an existing or creates a new config
+        file.
+
+    2. General stuff
+
+        2.1 How to run Python scripts
+
+            All usage examples below show how to execute the Python scripts on
+            the shell of a Unix-like system. If you do not know, how to run
+            those scripts on your operating system, you may have a look at
+            this page:
+
+                http://www.urbanware.org/howto_python.html
+
+        2.2 Overview of all command-line arguments
+
+            Usually, each script requires command-line arguments to operate.
+            So, to get an overview of all arguments available, simply run the
+            script with the "--help" argument. For example:
+
+                $ ./sotp-writer.py --help
+
+    3. Create a new config file
+
+        For example, if you want to create the config file "foobar.ini" inside
+        the directory "/tmp" containing the following lines
+
+            [Settings]
+            foo = 3
+
+        the command-line would look like this:
+
+            $ ./sotp-writer.py -a write -c "/tmp/foobar.ini" --new-file \
+                               -s "Settings" -o "foo" -v "3"
+
+    4. Write contents
+
+        4.1 Add a new option
+
+            For example, if you have the config file "foobar.ini" inside the
+            directory "/tmp" containing the following lines
+
+                [Settings]
+                foo = 3
+
+            and want to add the option "bar" with the value "false" to that
+            section, the command-line would look like this:
+
+                $ ./sotp-writer.py -a write -c "/tmp/foobar.ini" \
+                                   -s "Settings" -o "bar" -v "false"
+
+        4.2 Overwrite an existing option
+
+            For example, if you have the config file "foobar.ini" inside the
+            directory "/tmp" containing the following lines
+
+                [Settings]
+                foo = 3
+                bar = false
+
+            and want to overwrite the value of the option "bar" with the value
+            "true", the command-line would look like this:
+
+                $ ./sotp-writer.py -a write -c "/tmp/foobar.ini" \
+                                   -s "Settings" -o "bar" -v "true"
+
+        4.3 Add a new section
+
+            For example, if you have the config file "foobar.ini" inside the
+            directory "/tmp" containing the following lines
+
+                [Settings]
+                foo = 3
+                bar = true
+
+            and want to add the new section "User" with the option "name" and
+            the value "johndoe", type:
+
+                $ ./sotp-writer.py -a write -c "/tmp/foobar.ini" \
+                                   --new-section -s "User" -o "name" \
+                                   -v "johndoe"
+
+        4.4 Force writing
+
+            Since version 1.0.2 of SOTP, you can force writing contents to the
+            config file.
+
+            Please use the "force-write" mode with care, due to the fact, that
+            it will overwrite existing files irreversibly.
+
+            If the given config file does not exist, it will be created and
+            the corresponding section, option and value written to the file.
+
+            Otherwise, the section and option will be added to the existing
+            file. In case these already exist, the value will be replaced with
+            the new one.
+
+            So, to force writing the contents, simply use the "force-write"
+            instead of the "write" action:
+
+                $ ./sotp-writer.py -a force-write -c "/tmp/foobar.ini" \
+                                   -s "Settings" -o "foo" -v "3"
+
+    5. Remove contents
+
+          5.1  Remove an option
+
+            For example, if you have the config file "foobar.ini" inside the
+            directory "/tmp" containing the following lines
+
+                [Settings]
+                foo = 3
+                bar = true
+
+                [User]
+                name=johndoe
+
+            and want to remove the option "bar" from the "Settings" section,
+            type:
+
+                ./sotp-writer.py -a remove -c "/tmp/foobar.ini" \
+                                 -s "Settings" -o "bar"
+
+            Notice that the whole section will be removed if you do not give
+            an option.
+
+          5.2  Remove a whole section
+
+            For example, if you have the config file "foobar.ini" inside the
+            directory "/tmp" containing the following lines
+
+                [Settings]
+                foo = 3
+                bar = true
+
+                [User]
+                name=johndoe
+
+            and want to remove the whole "Settings" section from the config
+            file, type:
+
+                ./sotp-writer.py -a remove -c "/tmp/foobar.ini" \
+                                 -s "Settings"
+

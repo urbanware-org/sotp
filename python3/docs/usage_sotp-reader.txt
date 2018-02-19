@@ -1,0 +1,55 @@
+
+USAGE (sotp-reader.py)
+
+    Contents:
+
+        1.  Definition
+        2.  General stuff
+          2.1  How to run Python scripts
+          2.2  Overview of all command-line arguments
+        3. Read out a value
+
+    1. Definition
+
+        The SOTP Reader script parses a config file and return the value of a
+        requested option.
+
+    2. General stuff
+
+        2.1 How to run Python scripts
+
+            All usage examples below show how to execute the Python scripts on
+            the shell of a Unix-like system. If you do not know, how to run
+            those scripts on your operating system, you may have a look at
+            this page:
+
+                http://www.urbanware.org/howto_python.html
+
+        2.2 Overview of all command-line arguments
+
+            Usually, each script requires command-line arguments to operate.
+            So, to get an overview of all arguments available, simply run the
+            script with the "--help" argument. For example:
+
+                $ ./sotp-reader.py --help
+
+    3. Read out a value
+
+        For example, if you have the config file "foobar.ini" inside the
+        directory "/tmp" containing the following lines
+
+            [Settings]
+            foo = 3
+            bar = true
+
+        and want to read out the value of the value of the option "foo" from
+        the "Settings" section, type:
+
+            $ ./sotp-reader.py -c "/tmp/foobar.ini" -s "Settings" -o "foo"
+
+        If either the section or the option does not exist, this would return
+        an error, unless you define a fallback value:
+
+            $ ./sotp-reader.py -c "/tmp/foobar.ini" -s "Settings" -o "foo" \
+                               -f "1"
+

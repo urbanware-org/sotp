@@ -1,0 +1,32 @@
+
+CHANGELOG (SOTP)
+
+    Version 1.0.3 (2017-11-27)
+
+        + Added new versions of the Clap and PaVal core modules (replaced the
+          existing ones).
+
+        * Revised (refurbished) all components of the project in general
+          (neglibible changes).
+
+    Version 1.0.2 (2015-12-21)
+
+        + Added action to force writing the config file contents (whether or
+          not the given file and the corresponding section exist).
+
+        * Revised the main core module (removed some unnecessary code).
+
+    Version 1.0.1 (2014-06-20)
+
+        + Added a method to the SOTP core module to read out the version
+          information.
+
+        * Revised the SOTP core module (negligible indentation fixes).
+
+        # Fixed the bug inside the SOTP scripts when trying to read out the
+          version information.
+
+    Version 1.0.0 (2014-06-16)
+
+        * First official release of this major version.
+
