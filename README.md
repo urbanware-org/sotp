@@ -1,12 +1,12 @@
 # *SOTP* <img src="sotp.png" alt="SOTP logo" height="48px" width="48px" align="right"/>
 
 **Table of contents**
-* [Definition](#definition)
-* [Details](#details)
-* [Components](#components)
-* [Requirements](#requirements)
-* [Documentation](#documentation)
-* [Useless facts](#useless-facts)
+*   [Definition](#definition)
+*   [Details](#details)
+*   [Components](#components)
+*   [Requirements](#requirements)
+*   [Documentation](#documentation)
+*   [Useless facts](#useless-facts)
 
 ----
 
@@ -28,8 +28,8 @@ Its core module can be easily added to other projects and used for their config 
 
 The project consists of two basic components:
 
-* ***SOTP Reader***<br>The reader parses a config file and returns the value of a requested option from that file.
-* ***SOTP Writer***<br>The writer modifies existing or creates new config files.
+*   ***SOTP Reader***<br>The reader parses a config file and returns the value of a requested option from that file.
+*   ***SOTP Writer***<br>The writer modifies existing or creates new config files.
 
 [Top](#)
 
@@ -39,8 +39,8 @@ In order to run *SOTP*, the *Python* framework must be installed on the system.
 
 Depending on which version of the framework you are using:
 
-* *Python* 2.x (version 2.7 or higher is recommended, may also work with earlier versions)
-* *Python* 3.x (version 3.2 or higher is recommended, may also work with earlier versions)
+*   *Python* 2.x (version 2.7 or higher is recommended, may also work with earlier versions)
+*   *Python* 3.x (version 3.2 or higher is recommended, may also work with earlier versions)
 
 [Top](#)
 
@@ -52,9 +52,8 @@ Inside the `docs` sub-directories there are plain text files containing the docu
 
 ## Useless facts
 
-* The project name is an abbreviation for ***S****imple* ***O****ption* ***T**erm* ***P**rocessor*.
-* Even though the name contains the string "OTP", the project is not releated to one-time pad encryption in any way.
-* The first version uploaded on *GitHub* was *SOTP* 1.0.3 built on November 27<sup>th</sup>, 2017.
+*   The project name is an abbreviation for ***S****imple* ***O****ption* ***T**erm* ***P**rocessor*.
+*   Even though the name contains the string "OTP", the project is not releated to one-time pad encryption in any way.
+*   The first version uploaded on *GitHub* was *SOTP* 1.0.3 built on November 27<sup>th</sup>, 2017.
 
 [Top](#)
-
