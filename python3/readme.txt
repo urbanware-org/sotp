@@ -7,8 +7,8 @@ README (SOTP)
         Version 1.0.3 (based on Python 3.x framework)
         Copyright (C) 2017 by Ralf Kilian
 
-        Website: http://www.urbanware.org
         GitHub: https://github.com/urbanware-org/sotp
+        GitLab: https://gitlab.com/urbanware-org/sotp
 
     Definition
 
