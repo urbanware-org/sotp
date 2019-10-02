@@ -1,4 +1,4 @@
-# *SOTP* <img src="sotp.png" alt="SOTP logo" height="48px" width="48px" align="right"/>
+# *SOTP* <img src="sotp.png" alt="SOTP logo" height="128px" width="128px" align="right"/>
 
 **Table of contents**
 *   [Definition](#definition)
