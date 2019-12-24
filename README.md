@@ -63,6 +63,6 @@ You can contact me by sending an email to [dev@urbanware.org](mailto:dev@urbanwa
 
 *   The project name is an abbreviation for ***S****imple* ***O****ption* ***T**erm* ***P**rocessor*.
 *   Even though the name contains the string "OTP", the project is not releated to one-time pad encryption in any way.
-*   The first version uploaded on *GitHub* was *TaSp* 2.0.10 built on April 7<sup>th</sup>, 2018.
+*   The first version uploaded on *GitHub* was *SOTP* 1.0.3 built on February 20<sup>th</sup>, 2018.
 
 [Top](#sotp)
