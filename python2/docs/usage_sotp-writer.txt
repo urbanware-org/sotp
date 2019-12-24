@@ -5,15 +5,13 @@ USAGE (sotp-writer.py)
 
         1.  Definition
         2.  General stuff
-          2.1  How to run Python scripts
-          2.2  Overview of all command-line arguments
-        3. Create a new config file
-        4. Write contents
+        3.  Create a new config file
+        4.  Write contents
           4.1  Add a new option
           4.2  Overwrite an existing option
           4.3  Add a new section
           4.4  Force writing
-        5. Remove contents
+        5.  Remove contents
           5.1  Remove an option
           5.2  Remove a whole section
 
@@ -24,22 +22,11 @@ USAGE (sotp-writer.py)
 
     2. General stuff
 
-        2.1 How to run Python scripts
+        Usually, each script requires command-line arguments to operate.
+        So, to get an overview of all arguments available, simply run the
+        script with the "--help" argument. For example:
 
-            All usage examples below show how to execute the Python scripts on
-            the shell of a Unix-like system. If you do not know, how to run
-            those scripts on your operating system, you may have a look at
-            this page:
-
-                http://www.urbanware.org/howto_python.html
-
-        2.2 Overview of all command-line arguments
-
-            Usually, each script requires command-line arguments to operate.
-            So, to get an overview of all arguments available, simply run the
-            script with the "--help" argument. For example:
-
-                $ ./sotp-writer.py --help
+            $ ./sotp-writer.py --help
 
     3. Create a new config file
 
