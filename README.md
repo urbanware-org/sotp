@@ -19,7 +19,7 @@ The *SOTP* project is a simple tool for reading, modifying and writing *INI*-lik
 
 ## Details
 
-The main purpose of SOTP is to simplify reading and writing config files with shell scripts. It parses INI-like config files and returns a requested value as a string, but is also able to modify existing (add or delete sections as well as options and change values) or create new files.
+The main purpose of *SOTP* is to simplify reading and writing config files with shell scripts. It parses *INI*-like config files and returns a requested value as a string, but is also able to modify existing (add or delete sections as well as options and change values) or create new files.
 
 Its core module can be easily added to other projects and used for their config file operations.
 
