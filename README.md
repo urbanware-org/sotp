@@ -23,6 +23,9 @@ The main purpose of SOTP is to simplify reading and writing config files with sh
 
 Its core module can be easily added to other projects and used for their config file operations.
 
+> [!NOTE]
+> This project was **officially discontinued** as of May 2026 and is **no longer maintained**.
+
 [Top](#sotp)
 
 ## Components
